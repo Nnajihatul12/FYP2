@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewFVFormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIEW FORM"
+        android:background="#FFEB3B"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/printBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_print_24"
+                android:backgroundTint="#03A9F4"
+                android:layout_weight="1"/>
+<!--            <ImageButton-->
+<!--                android:id="@+id/screenShotbtn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:background="#673AB7"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:src="@drawable/ic_baseline_screenshot_24"-->
+<!--                android:layout_weight="1"/>-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="--USER DETAILS--"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/fullNameTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Fullname"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/phoneNotv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Phone No."
+                android:layout_marginStart="24dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Gender"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/black"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:id="@+id/genderTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="|"
+                android:textColor="@color/black"
+                android:layout_weight="3"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/ageTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Age"
+                android:textColor="@color/black"
+                android:layout_weight="3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="years old"
+                android:textColor="@color/black"
+                android:layout_weight="3"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/occupationTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Occupation"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RM"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/black"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:id="@+id/incomeSalaryTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Income Salary"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/black"
+                android:layout_weight="3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/address1LineTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:hint="Address line 1"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="3"
+                    android:hint="Gender"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="3"
+                    android:text="|"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="3"
+                    android:hint="Age"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="3"
+                    android:text="years old"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/address2LineTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Address line 2"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/postCodeTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Postcode"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="--HOUSEHOLD QUANTITY--"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Baby"
+                android:layout_weight="2"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/babyQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Qty Baby"
+                android:textColor="@color/black"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="people"
+                android:textColor="@color/black"
+                android:layout_weight="5"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(Below 1 years old)"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Children"
+                android:layout_weight="2"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/childrenQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Qty Children"
+                android:textColor="@color/black"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="people"
+                android:textColor="@color/black"
+                android:layout_weight="5"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="(Below 12 years old)"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teenager"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp"/>
+
+            <TextView
+                android:id="@+id/teenQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Qty Teenager"
+                android:textColor="@color/black"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="people"
+                android:textColor="@color/black"
+                android:layout_weight="5"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="(Below 18 years old)"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adult"
+                android:layout_weight="2"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/adultQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Qty Adult"
+                android:textColor="@color/black"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="people"
+                android:textColor="@color/black"
+                android:layout_weight="5"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(Below 60 years old)"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Elderly"
+                android:layout_weight="2"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/elerdlyQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Qty Elderly"
+                android:textColor="@color/black"
+                android:layout_weight="5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="people"
+                android:textColor="@color/black"
+                android:layout_weight="5"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(Above 60 years old)"
+
+                android:layout_marginStart="24dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disabled people"
+                android:layout_marginStart="24dp"
+                android:layout_weight="2"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/qtyDisabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textColor="@color/black"
+                android:hint="Qty Disabled"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="people"
+                android:textColor="@color/black"
+                android:layout_weight="5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="--DONATION REQUEST--"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <CheckBox
+                android:id="@+id/hygieneKitsCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="Hygiene Kits"
+                android:textColor="@color/black">
+
+            </CheckBox>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <CheckBox
+                android:id="@+id/cashAssistanceCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="Cash Assistance"
+                android:textColor="@color/black">
+            </CheckBox>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <CheckBox
+                android:id="@+id/ambulanceServicesCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="Ambulance Services"
+                android:textColor="@color/black">
+
+            </CheckBox>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <CheckBox
+                android:id="@+id/houseCleaningCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="House Cleaning"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp">
+            </CheckBox>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <CheckBox
+                android:id="@+id/powerBankCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Powerbank"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp">
+            </CheckBox>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <CheckBox
+                android:id="@+id/foodAndWaterCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food and Water"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp">
+            </CheckBox>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <CheckBox
+                android:id="@+id/infrastructureMaintenanceCheckbx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Infrastructure Maintenances"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp">
+            </CheckBox>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <CheckBox
+                android:id="@+id/medicineAndFirstAidKitsCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicines and First Aid Kits"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp">
+            </CheckBox>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <CheckBox
+                android:id="@+id/electricalApplianceCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Electrical Appliances"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp">
+            </CheckBox>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+
+            <CheckBox
+                android:id="@+id/clothesAndBlanketCheckbx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="Clothes and Blankets"
+                android:textColor="@color/black">
+
+            </CheckBox>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <CheckBox
+                android:id="@+id/diaperPadsChkbx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diaper and Pads"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp">
+            </CheckBox>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+
+            <CheckBox
+                android:id="@+id/candlesMatchesAndTorchLightCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Candles, Matches and Torchlight"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp">
+            </CheckBox>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/updateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:backgroundTint="#FFEB3B"
+                android:textColor="@color/black"
+                android:text="UPDATE">
+            </Button>
+
+            <Button
+                android:id="@+id/signOutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:backgroundTint="#FFEB3B"
+                android:textColor="@color/black"
+                android:text="SIGN OUT">
+            </Button>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

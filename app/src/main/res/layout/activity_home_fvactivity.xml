@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".HomeFVActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If You a User to Request Donation Choose User to Sign in"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    <Button
+        android:id="@+id/userBtn"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFEB3B"
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp"
+        android:text="USER" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If You a User to a NGO choose NGO to Sign In"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    <Button
+        android:id="@+id/ngoBtn"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:backgroundTint="#FFEB3B"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="NGOs" />
+
+    </LinearLayout>
+</LinearLayout>
